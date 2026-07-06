@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div id="hearts"></div>
+     <canvas id="confetti"></canvas>
+    <!-- Password Page -->
+    <div class="password-page" id="passwordPage">
+
+        <div class="card">
+
+            <h1>🎁</h1>
+
+            <h2>A Special Surprise</h2>
+
+            <p>This surprise is made only for my Beautiful Queen ❤️</p>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter Password">
+
+            <button onclick="checkPassword()">
+                Unlock ❤️
+            </button>
+
+            <p id="error"></p>
+
+        </div>
+
+    </div>
+
+    <!-- Countdown -->
+
+<div class="countdown-page" id="countdownPage">
+
+    <h1 id="countNumber">3</h1>
+
+</div>
+
+
+    <!-- Welcome Page -->
+
+    <div class="welcome-page" id="welcomePage">
+
+        <img src="images/photo1.jpg" class="memory-photo">
+
+        <h1>Happy Birthday My Queen ❤️</h1>
+
+        <p>
+            Today is all about you. I made this little surprise just for you.
+        </p>
+
+        <button id="startJourney">
+            Start Journey ✨
+        </button>
+
+    </div>
+
+<!-- Birthday Wish Page -->
+
+<div class="wish-page" id="wishPage">
+
+    <img src="images/photo2.jpg" class="memory-photo">
+
+    <h1>Happy Birthday ❤️</h1>
+
+    <p id="typingText"></p>
+
+    <button id="nextMemory">
+        Continue ❤️
+    </button>
+
+</div>
+
+<!-- Memory Page 1 -->
+
+<div class="memory-page" id="memoryPage1">
+
+    <img src="images/photo3.png" class="memory-photo">
+
+    <h2>Some Memories ❤️</h2>
+
+       <p id="memoryText"></p>
+
+    <button id="nextMemory1">
+        Next ❤️
+    </button>
+
+</div>
+
+<!-- Memory Page 2 -->
+
+<div class="memory-page" id="memoryPage2">
+
+    <img src="images/photo4.jpg" class="memory-photo">
+
+    <h2>Beautiful Moments ❤️</h2>
+
+    <p id="memoryText2"></p>
+
+    <button id="nextMemory2">
+        Next ❤️
+    </button>
+
+</div>
+
+<!-- Memory Page 3 -->
+
+<div class="memory-page" id="memoryPage3">
+
+    <img src="images/photo5.jpg" class="memory-photo">
+
+    <h2>Always Special ❤️</h2>
+
+    <p id="memoryText3"></p>
+
+    <button class="next-btn" id="nextMemory3">
+        Next ❤️
+    </button>
+
+</div>
+
+<!-- Memory Page 4 -->
+
+<div class="memory-page" id="memoryPage4">
+
+    <img src="images/photo6.webp" class="memory-photo">
+
+    <h2>One Last Memory ❤️</h2>
+
+    <p id="memoryText4"></p>
+
+    <button class="next-btn" id="nextMemory4">
+        Final Surprise 🎁
+    </button>
+
+</div>
+
+<!-- Final Surprise Page -->
+
+<div class="final-page" id="finalPage">
+
+    <div class="final-card">
+
+        <h1>🎉 Happy Birthday My Queen ❤️</h1>
+
+        <img src="images/photo7.jpg" class="final-photo">
+
+        <h2>You are the Best Gift of My Life 💖</h2>
+
+        <p id="finalText"></p>
+
+        <button id="showLetter">
+            Open My Letter 💌
+        </button>
+
+    </div>
+
+</div>
+
+ <!-- Letter Popup -->
+
+<div class="letter-popup" id="letterPopup">
+
+    <div class="letter-box">
+
+        <span id="closeLetter">✖</span>
+
+        <h2>💌 A Letter For You</h2>
+
+        <p id="letterText"></p>
+
+        <img src="images/photo7.jpg" class="ending-dp">
+
+        <p class="ending-msg">
+            Thank You For Reading ❤️
+        </p>
+
+        <button id="replayJourney">
+            🔄 Replay Journey
+        </button>
+
+    </div>
+
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="music/bg.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="favoriteMusic">
+    <source src="music/favorite.mp3" type="audio/mpeg">
+</audio>
+
+   <!-- ================= PHOTO POPUP ================= -->
+<div class="photo-popup" id="photoPopup">
+
+    <span class="close-photo" id="closePhoto">&times;</span>
+
+    <img id="popupImage">
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
