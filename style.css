@@ -1,0 +1,1082 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#ffe6f0,#ffffff,#ffd6e7);
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+/* ---------------- Password Page ---------------- */
+
+.password-page{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    width:370px;
+    background:rgba(255,255,255,.80);
+    backdrop-filter:blur(18px);
+    border-radius:25px;
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(255,105,180,.25);
+    animation:fadeIn 1s ease;
+}
+
+.card h1{
+    font-size:60px;
+}
+
+.card h2{
+    margin-top:15px;
+    color:#ff4f87;
+    font-size:38px;
+}
+
+.card p{
+    margin-top:12px;
+    color:#666;
+    line-height:30px;
+    font-size:18px;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    margin-top:25px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    font-size:17px;
+    background:white;
+    box-shadow:0 0 12px rgba(0,0,0,.08);
+}
+
+button{
+    width:100%;
+    margin-top:20px;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+    font-size:18px;
+    color:white;
+    background:linear-gradient(45deg,#ff5fa2,#ff87b5);
+    transition:.35s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+#error{
+    margin-top:15px;
+    color:red;
+    font-weight:bold;
+}
+
+/* ---------------- Welcome Page ---------------- */
+
+.welcome-page{
+    display:none;
+    width:100%;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:60px 20px;
+    animation:fadeIn 1s ease;
+}
+
+.welcome-page img{
+    width:300px;
+    height:430px;
+    object-fit:cover;
+    object-position:center top;
+    border-radius:25px;
+    border:8px solid white;
+    box-shadow:0 20px 45px rgba(255,105,180,.30);
+    margin-bottom:30px;
+}
+
+.welcome-page h1{
+    color:#ff4f87;
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.welcome-page p{
+    max-width:650px;
+    font-size:22px;
+    line-height:35px;
+    color:#666;
+    margin-bottom:35px;
+}
+
+#startJourney{
+    width:250px;
+}
+
+/* ---------------- Animation ---------------- */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media(max-width:768px){
+
+    .card{
+        width:90%;
+    }
+
+    .welcome-page img{
+        width:250px;
+        height:350px;
+    }
+
+    .welcome-page h1{
+        font-size:34px;
+    }
+
+    .welcome-page p{
+        font-size:18px;
+        line-height:30px;
+    }
+
+}
+
+
+/* ================= Birthday Wish Page ================= */
+
+.wish-page{
+
+    display:none;
+
+    width:100%;
+
+    min-height:100vh;
+
+    padding:60px 20px;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    animation:fadeIn 1s ease;
+
+}
+
+.wish-photo{
+
+    width:300px;
+
+    height:430px;
+
+    object-fit:cover;
+
+    object-position:center top;
+
+    border-radius:25px;
+
+    border:8px solid white;
+
+    box-shadow:0 20px 45px rgba(255,105,180,.30);
+
+    margin-bottom:30px;
+
+}
+
+.wish-page h1{
+
+    color:#ff4f87;
+
+    font-size:45px;
+
+    margin-bottom:30px;
+
+}
+
+#typingText{
+
+    width:80%;
+
+    max-width:800px;
+
+    font-size:22px;
+
+    line-height:40px;
+
+    color:#555;
+
+    min-height:180px;
+
+}
+
+#nextMemory{
+
+    width:240px;
+
+    margin-top:40px;
+
+}
+
+#typingText{
+
+    white-space:pre-line;
+
+}
+
+/* ================= Memory Page ================= */
+
+.memory-page{
+
+    display:none;
+
+    width:100%;
+
+    min-height:100vh;
+
+    padding:60px 20px;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    animation:fadeIn 1s ease;
+
+}
+
+.memory-photo{
+
+    width:300px;
+
+    height:430px;
+
+    object-fit:cover;
+
+    object-position:center top;
+
+    border-radius:25px;
+
+    border:8px solid white;
+
+    box-shadow:0 20px 45px rgba(255,105,180,.30);
+
+    margin-bottom:30px;
+
+}
+
+.memory-page h2{
+
+    color:#ff4f87;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.memory-page p{
+
+    width:80%;
+
+    max-width:700px;
+
+    font-size:22px;
+
+    line-height:38px;
+
+    color:#555;
+
+}
+
+#nextMemory1{
+
+    width:220px;
+
+    margin-top:35px;
+
+}
+#memoryText{
+    white-space: pre-line;
+}
+
+/* Memory Page Button */
+
+.memory-page button{
+
+    width:220px;
+
+    margin-top:30px;
+
+}
+
+/* ================= Final Surprise Page ================= */
+
+.final-page{
+
+    display:none;
+    min-height:100vh;
+    width:100%;
+    padding:70px 20px;
+    justify-content:center;
+    align-items:center;
+    animation:fadeIn 1s ease;
+
+}
+
+.final-card{
+
+    width:90%;
+    max-width:800px;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    border-radius:30px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(255,105,180,.25);
+
+}
+
+.final-card h1{
+
+    color:#ff4f87;
+    font-size:50px;
+    margin-bottom:30px;
+
+}
+
+.final-photo{
+
+    width:320px;
+    height:420px;
+    object-fit:cover;
+    object-position:center;
+    border-radius:25px;
+    border:8px solid white;
+    box-shadow:0 15px 35px rgba(255,105,180,.35);
+    margin-bottom:25px;
+
+}
+
+.final-card h2{
+
+    color:#ff5a95;
+    font-size:35px;
+    margin-bottom:20px;
+
+}
+
+#finalText{
+
+    font-size:22px;
+    line-height:40px;
+    color:#555;
+    max-width:700px;
+    margin:25px auto;
+
+}
+
+#showLetter{
+
+    width:260px;
+    margin-top:25px;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.final-card{
+
+    padding:25px;
+
+}
+
+.final-card h1{
+
+    font-size:34px;
+
+}
+
+.final-photo{
+
+    width:240px;
+    height:320px;
+
+}
+
+.final-card h2{
+
+    font-size:28px;
+
+}
+
+#finalText{
+
+    font-size:18px;
+    line-height:32px;
+
+}
+
+}
+
+/* ================= Letter Popup ================= */
+
+.letter-popup{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.55);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+
+}
+
+.letter-box{
+    width:700px;
+    max-height:80vh;
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    overflow-y:auto;
+    position:relative;
+}
+
+.letter-box h2{
+
+    text-align:center;
+
+    color:#ff4f87;
+
+    margin-bottom:30px;
+
+    font-size:35px;
+
+}
+
+#letterText{
+
+    white-space:pre-line;
+
+    line-height:38px;
+
+    font-size:20px;
+
+    color:#555;
+
+}
+
+#closeLetter{
+    position:sticky;
+    top:0;
+    float:right;
+
+    width:40px;
+    height:40px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#ff5fa2;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+
+    z-index:1000;
+}
+
+/* ================= FLOATING HEARTS ================= */
+
+#hearts{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:9999;
+}
+
+.heart{
+    position:absolute;
+    bottom:-50px;
+    color:#ff4f87;
+    animation:floatHeart linear forwards;
+    opacity:0.8;
+}
+
+@keyframes floatHeart{
+
+    0%{
+        transform:translateY(0) scale(0.8);
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-120vh) scale(1.4);
+        opacity:0;
+    }
+
+}
+
+@keyframes floatHeart{
+
+    0%{
+        transform:translateY(0) scale(.8);
+        opacity:0;
+    }
+
+    15%{
+        opacity:.9;
+    }
+
+    100%{
+        transform:translateY(-110vh) scale(1.5);
+        opacity:0;
+    }
+
+}
+
+/* ================= PAGE TRANSITION ================= */
+
+.fade-out{
+    animation:fadeOut .45s ease forwards;
+}
+
+.fade-in{
+    animation:fadeIn .45s ease;
+}
+
+@keyframes fadeOut{
+
+    from{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+    to{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+
+}
+
+/* ================= PHOTO ZOOM ================= */
+
+.photo-popup{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.9);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    animation:fadeIn .4s;
+
+}
+
+.photo-popup img{
+
+    width:85%;
+
+    max-width:450px;
+
+    border-radius:20px;
+
+    border:6px solid white;
+
+    box-shadow:0 0 40px rgba(255,255,255,.4);
+
+    animation:zoomPhoto .4s;
+
+}
+
+.close-photo{
+
+    position:absolute;
+
+    top:20px;
+
+    right:30px;
+
+    color:white;
+
+    font-size:45px;
+
+    cursor:pointer;
+
+}
+
+@keyframes zoomPhoto{
+
+    from{
+
+        transform:scale(.6);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* ================= CONFETTI ================= */
+
+#confetti{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    pointer-events:none;
+
+    z-index:9998;
+
+}
+
+/* ================= FINAL TITLE GLOW ================= */
+
+.final-card h1{
+
+    animation:glowTitle 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes glowTitle{
+
+    from{
+
+        text-shadow:
+        0 0 10px #ff8fbf,
+        0 0 20px #ff8fbf,
+        0 0 30px #ff5fa2;
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        text-shadow:
+        0 0 20px #ffffff,
+        0 0 35px #ff5fa2,
+        0 0 50px #ff5fa2;
+
+        transform:scale(1.03);
+
+    }
+
+}
+
+/* ================= FINAL PHOTO ================= */
+
+.final-photo{
+
+    animation:photoFloat 4s ease-in-out infinite;
+
+}
+
+@keyframes photoFloat{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/* ================= FINAL CARD ================= */
+
+.final-card{
+
+    animation:cardAppear .8s ease;
+
+}
+
+@keyframes cardAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+/* ================= COUNTDOWN ================= */
+
+.countdown-page{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(135deg,#ffe6f0,#ffffff,#ffd6e7);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+}
+
+#countNumber{
+
+    font-size:180px;
+
+    color:#ff4f87;
+
+    font-weight:bold;
+
+    animation:countZoom 1s ease infinite;
+
+    text-shadow:0 0 25px #ff8fbf;
+
+}
+
+@keyframes countZoom{
+
+    from{
+
+        transform:scale(.5);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+#replayJourney{
+
+    width:230px;
+
+    margin:30px auto 10px;
+
+    display:block;
+
+}
+
+.ending-dp{
+
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid white;
+
+    display:block;
+
+    margin:20px auto 10px;
+
+    box-shadow:0 0 20px rgba(255,255,255,.35);
+
+}
+
+.ending-msg{
+
+    text-align:center;
+
+    color:#ff6fa5;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media screen and (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .card{
+        width:92%;
+        padding:30px 20px;
+    }
+
+    .card h1{
+        font-size:50px;
+    }
+
+    .card h2{
+        font-size:28px;
+    }
+
+    .card p{
+        font-size:16px;
+        line-height:26px;
+    }
+
+    input,
+    button{
+        font-size:16px;
+        padding:14px;
+    }
+
+    /* Welcome Page */
+
+    .welcome-page{
+
+        padding:30px 20px;
+
+    }
+
+    .welcome-page img{
+
+        width:220px;
+
+        height:320px;
+
+    }
+
+    .welcome-page h1{
+
+        font-size:32px;
+
+    }
+
+    .welcome-page p{
+
+        font-size:17px;
+
+        line-height:28px;
+
+    }
+
+    /* Memory & Wish */
+
+    .wish-page,
+    .memory-page,
+    .final-page{
+
+        padding:25px 15px;
+
+    }
+
+    .memory-photo,
+    .final-photo{
+
+        width:90%;
+
+        max-width:280px;
+
+        height:auto;
+
+    }
+
+    .wish-page h1,
+    .memory-page h2,
+    .final-card h1{
+
+        font-size:28px;
+
+    }
+
+    .wish-page p,
+    .memory-page p,
+    .final-card p{
+
+        font-size:17px;
+
+        line-height:28px;
+
+    }
+
+    /* Letter */
+
+    .letter-box{
+
+        width:95%;
+
+        max-height:90vh;
+
+        overflow-y:auto;
+
+        padding:25px;
+
+    }
+
+    .letter-box h2{
+
+        font-size:26px;
+
+    }
+
+    .letter-box p{
+
+        font-size:17px;
+
+        line-height:30px;
+
+    }
+
+    #closeLetter{
+
+        top:15px;
+
+        right:15px;
+
+        font-size:28px;
+
+    }
+
+    /* Popup */
+
+    .photo-popup img{
+
+        width:92%;
+
+    }
+
+    /* Countdown */
+
+    #countNumber{
+
+        font-size:110px;
+
+    }
+
+    /* Buttons */
+
+    #startJourney,
+    #nextMemory,
+    #nextMemory1,
+    #nextMemory2,
+    #nextMemory3,
+    #nextMemory4,
+    #showLetter,
+    #replayJourney{
+
+        width:100%;
+
+        max-width:280px;
+
+    }
+
+}
